@@ -1,1 +1,1 @@
-pyinstaller -F pypacman.py --specpath ./ --name pypacamn --icon pac.ico
+pyinstaller -F pypacman.py --specpath ./ --name pypacamn --icon images/pac.ico

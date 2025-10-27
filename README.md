@@ -1,8 +1,10 @@
-# <img src="./pac.ico" alt="PyPacman logo" /> PyPacman
+# <img src="./images/pac.ico" alt="PyPacman logo" /> PyPacman
 
 This project replicates the famous Pacman game using the Python language.
 
-I developed it as a project for the Object Oriented Programming subject for the Bachelor's degree of Electronic and Computer Engineering at the University of Messina.
+I developed it in 2018 as a project for the Object Oriented Programming subject for the Bachelor's degree of Electronic and Computer Engineering at the University of Messina.
+
+<img src="./images/pypacman_screens.png" alt="main screen" />
 
 ## Features
 - File-based map generation. The "standard_map.txt" file in the "maps" folder, represent the classic Pacman map, while it is possible to generate new map by modifing that file.

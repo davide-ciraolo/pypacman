@@ -1,3 +1,4 @@
+from pathlib import Path
 from tkinter import *
 from i_mString import *
 
@@ -248,7 +249,7 @@ class Map():
         self._tileSet.set_hborder(int(mapFile[pos:mapFile.find(";", pos)]))
 
         pos = mapFile.find("@tileset_path = ", pos) + len("@tileset_path = ")
-        self._tileSet.set_path(mapFile[pos:mapFile.find(";", pos)])
+        self._tileSet.set_path(Path(mapFile[pos:mapFile.find(";", pos)]))
 
         pos = mapFile.find("@tiles = {", pos) + len("@tiles = {")
         i = 0

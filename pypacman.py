@@ -1,3 +1,4 @@
+from pathlib import Path
 from tkinter import *
 from i_mTimer import Timer
 from i_mMap import *
@@ -143,7 +144,7 @@ class Application():
 
         #self._tileSet = TileSet(path = "textures/pacman1.png", t_w = TILE_SIZE_W, t_h = TILE_SIZE_H, t_wb = TILE_SIZE_WB, t_hb = TILE_SIZE_HB)
 
-        self._gameMap = Map(master = self.GameFrame, path = "maps\standard_map.txt")
+        self._gameMap = Map(master = self.GameFrame, path = Path("maps\standard_map.txt"))
 
         self.ScoreBoard = Label(self._gameMap.get_mapFrame(), bg = "black", fg = "white", font = "Helvetica")
         self.ScoreBoard.place(anchor = CENTER, relx = 0.8, rely = 0.96, height = 26)
